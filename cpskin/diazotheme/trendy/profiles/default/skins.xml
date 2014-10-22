@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<object name="portal_skins"
+        allow_any="False"
+        cookie_persistence="False"
+        default_skin="trendy theme">
+
+    <object name="trendy_images"
+            meta_type="Filesystem Directory View"
+            directory="cpskin.diazotheme.trendy:skins/trendy_images"/>
+
+ <skin-path name="trendy theme"
+            based-on="Sunburst Theme">
+    <layer name="trendy_images"
+           insert-after="custom"/>
+ </skin-path>
+
+</object>
