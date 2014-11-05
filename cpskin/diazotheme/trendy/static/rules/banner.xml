@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rules xmlns="http://namespaces.plone.org/diazo"
+       xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+       xmlns:css="http://namespaces.plone.org/diazo/css">
+
+  <drop css:content="#carousel" />
+
+  <!-- Standard Header / banner -->
+  <rules if-not="$isinminisitemode">
+
+      <replace css:content-children="#portal-header">
+          <xsl:apply-templates select="./*"/>
+
+          <div id="flex">
+              <div class="flex-container">
+                  <xsl:apply-templates select="//div[@id='flex']/div[@class='flex-container']/*[not(@id) or @id!='carousel']"/>
+              </div>
+          </div>
+
+      </replace>
+
+      <drop css:content="#slider .slides .linkimg" />
+      <drop css:content="#accueil #flex" />
+
+  </rules>
+
+</rules>
