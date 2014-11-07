@@ -391,6 +391,16 @@ dl.portlet dt, .portletWrapper dl.portlet dt a, dl.portlet a:link{
     color: white;  
 }
 
+#portal-column-two aside > div:nth-child(2) dl.portlet .portletHeader a{
+	background-color:#ea6060;
+	color:#475055;
+}
+
+#portal-column-two aside > div:nth-child(2) dl.portlet .portletHeader a:hover{
+	color:#475055 !important;
+	text-decoration:underline;
+}
+
 #portal-column-two aside > div:nth-child(2) dl.portlet dt {
 	border-bottom:1px solid #475055;
 	padding-left: 1em;
