@@ -1,17 +1,3 @@
-/*Changement temporaire*/
-
-#social-viewlet, #portal-personaltools-wrapper, #portal-siteactions {
-    float: right;
-}
-
-
-#portal-header {
-    margin: 0 auto;
-    max-width: 1230px;
-}
-
-/* Fin changement temporaire*/
-
 body #visual-portal-wrapper {
     background-image: url("../images/header-bg.jpg");
     background-repeat: no-repeat;
@@ -20,6 +6,11 @@ body #visual-portal-wrapper {
 }
 
 /* >>> HEADER <<< */
+
+#portal-header {
+    margin: 0 auto;
+    max-width: 1230px;
+}
 
 .section-notheme #top-actions {
     background-color: transparent;
@@ -158,14 +149,14 @@ body #visual-portal-wrapper {
     max-width: 1230px;
 }
 
-.template-folderview #portal-header ul.navTreeLevel0 {
+.section-notheme #portal-header ul.navTreeLevel0 {
     box-shadow: 0 4px 4px #6b6b6b;
     position: absolute;
     width: 1230px;
     z-index: 1;
 }
 
-.template-folderview #portal-header .sf-menu ul.navTreeLevel1{
+.section-notheme #portal-header .sf-menu ul.navTreeLevel1{
 	box-shadow: 0 2px 2px #6b6b6b;
 }
 
@@ -183,6 +174,10 @@ body #visual-portal-wrapper {
 
 /* --- Réseaux sociaux --- */
 
+#social-viewlet, #portal-personaltools-wrapper, #portal-siteactions {
+    float: right;
+}
+
 #content #viewlet-above-content-title ul li a:before {
     color: #56C2CC;
 }
@@ -194,7 +189,6 @@ body #visual-portal-wrapper {
 #content #viewlet-above-content-title ul li a {
     font-size: 20px;
 }
-
 
 /* --- Fin réseaux sociaux --- */
 
@@ -337,7 +331,15 @@ body #visual-portal-wrapper {
 
 /* --- Fin flexslider --- */
 
-/* Couleur deux premiers portlets */
+/* --- Portlet généraux --- */
+
+dl.portlet dt, .portletWrapper dl.portlet dt a, dl.portlet a:link{
+    color: #475055;
+}
+
+/* --- Fin portlet généraux --- */
+
+/* --- Couleur deux premiers portlets --- */
 
 #portal-column-two aside > div:first-child dl.portlet {
     margin-top: 25px;
@@ -401,7 +403,7 @@ body #visual-portal-wrapper {
 	padding:0;
 }
 
-/* Fin couleur deux premiers portlets */
+/* --- Fin couleur deux premiers portlets --- */
 
 /* --- Portlet gazette --- */
 
@@ -410,6 +412,12 @@ body #visual-portal-wrapper {
     padding: 3%;
     margin-top:6%;
 } 
+
+#portlet-gazette .context {
+    background-color: #ea6060;
+    border: 1px solid #f74c4d;
+    color: white;
+}
 
 /* --- Fin portlet gazette --- */
 
@@ -443,14 +451,6 @@ body #visual-portal-wrapper {
 }
 
 /* --- Fin portlet boîtes à outils--- */
-
-/* --- Portelts généraux --- */
-
-dl.portlet dt a:link, dl.portlet dt a:visited, dl.portlet dt a:hover {
-    color: #56C2CC;
-}
-
-/* --- Fin portlets généraux --- */
 
 /* >>> FIN CONTENT <<< */
 
@@ -510,4 +510,7 @@ dl.portlet dt a:link, dl.portlet dt a:visited, dl.portlet dt a:hover {
     width: 16.75%
 }
 
+#footer-sitemap div.footer-static h2 {
+    color: #475055;
+}
 /* >>> FIN FOOTER <<< */
