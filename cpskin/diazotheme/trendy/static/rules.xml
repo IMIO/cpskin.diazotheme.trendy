@@ -5,5 +5,6 @@
 
   <!-- Our own rules -->
   <xi:include href="rules/banner.xml"/>
+  <xi:include href="rules/footer.xml"/>
 
 </rules>
