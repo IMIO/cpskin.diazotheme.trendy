@@ -4,24 +4,6 @@
        xmlns:css="http://namespaces.plone.org/diazo/css">
 
   <drop css:content="#carousel" />
-
-  <!-- Standard Header / banner -->
-  <rules if-not="$isinminisitemode">
-
-      <replace css:content-children="#portal-header">
-          <xsl:apply-templates select="./*"/>
-
-          <div id="flex">
-              <div class="flex-container">
-                  <xsl:apply-templates select="//div[@id='flex']/div[@class='flex-container']/*[not(@id) or @id!='carousel']"/>
-              </div>
-          </div>
-
-      </replace>
-
-      <drop css:content="#slider .slides .linkimg" />
-      <drop css:content="#accueil #flex" />
-
-  </rules>
+  <drop css:content="#slider .slides .linkimg" />
 
 </rules>
