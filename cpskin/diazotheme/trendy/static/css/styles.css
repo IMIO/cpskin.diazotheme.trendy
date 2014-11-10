@@ -47,13 +47,18 @@ body #visual-portal-wrapper {
 
 #portal-searchbox {
     background-color: #56c2cc;
+    margin:0.2em 0 1.2em;
     right: 0;
+}
+
+#portal-logo{
+	margin: 1em 0 0.8em;
 }
 
 #portal-top #cpskin-banner {
     background-color: #ffffff;
     margin: auto auto 0;
-    padding: 0 1%;
+    padding: 0 0.8%;
 }
 
 
@@ -85,13 +90,13 @@ body #visual-portal-wrapper {
 
 #top-navigation {
     background-color: transparent;
-    margin: 0 auto;
+    margin: 0 auto 1em;
     padding: 0 1% 1% 1%;
 }
 
 #portal-header #navWrapper {
     background-color: #ffffff;
-    margin:1em auto;
+    margin:0 auto 1em;
     max-width: 1230px;
     padding: 0
 }
@@ -140,19 +145,16 @@ body #visual-portal-wrapper {
     box-shadow: 0 0 0 white;
 }
 
-#portal-header ul.navTreeLevel0 {
-    max-width: 1230px;
-}
-
-#portal-header ul.navTreeLevel0,.section-notheme #portal-header .sf-menu ul.navTreeLevel1 {
+#portal-header ul.navTreeLevel0,.section-notheme #portal-header .sf-menu ul.navTreeLevel1,
+#portal-header .sf-menu ul.navTreeLevel1 {
     background-color: #EFEFEF;
-    max-width: 1230px;
+    max-width: 100%;
 }
 
 .section-notheme #portal-header ul.navTreeLevel0 {
     box-shadow: 0 4px 4px #6b6b6b;
     position: absolute;
-    width: 1230px;
+    width: 100%;
     z-index: 1;
 }
 
@@ -196,6 +198,7 @@ body #visual-portal-wrapper {
 
 #portal-personaltools dd a:hover {
     background: none repeat scroll 0 0 #f1f1f1;
+    color:#444;
 }
 
 #portal-personaltools dd {
@@ -208,25 +211,34 @@ body #visual-portal-wrapper {
 
 /* >>> CONTENT <<< */
 
+#content a:hover {
+    color: #3a3a3a !important;
+}
+
 #portal-columns {
     background-color: white;
     height: 667px;
     max-width: 1200px;
-    padding: 0 1% 1% 1%;
+    padding: 0 0.8% 1%;
 }
 
+#portal-column-content #portal-breadcrumbs {
+    padding: 1.5em 0 0 1em;
+}
+   
 .titre-rss{
     background-color:white;
+    margin-top:0;
 }
 
 .titre-rss h2,.bloc-rss:after {
     color: #475055;
 }
 
-.bloc-2 .titre-rss {
+/*.bloc-2 .titre-rss {
     margin-top: -5px;
 }
-
+*/
 .results{
     background-color: white;
     border-top: 1px solid #dde2e4;
@@ -234,7 +246,7 @@ body #visual-portal-wrapper {
 }
 
 #content #accueil .voir-tout {
-    color: #6e7b81;
+    color: #475055;
 }
 
 .voir-tout:after {
@@ -242,7 +254,7 @@ body #visual-portal-wrapper {
 }
 
 #content #accueil a.voir-tout:hover {
-    color:#535966 !important;
+    color:#747f84 !important;
 }
 
 /* --- Viewlet multimédia --- */
@@ -257,7 +269,7 @@ body #visual-portal-wrapper {
 }
 
 #multimediaviewlet .link-all {
-    color: #6e7b81;
+    color: #475055;
     font-size:90%;
 }
 
@@ -266,7 +278,7 @@ body #visual-portal-wrapper {
 }
 
 #multimediaviewlet .link-all:hover {
-    color: #535966;
+    color: #747f84;
 }
 
 /* --- Fin viewlet multimédia --- */
@@ -275,13 +287,14 @@ body #visual-portal-wrapper {
 
 #flex {
     background-color: #56c2cc;
-    margin: 3em 0;
+    margin: 4.5em 0 4em;
     max-width: 50%;
     opacity:0.95;
 }
 
 .flexslider {
     background: none repeat scroll 0 0 transparent;
+    margin-bottom: 0;
 }
 
 .flex-viewport {
@@ -315,7 +328,7 @@ body #visual-portal-wrapper {
 
 #slider.flexslider .flex-caption {
     background-color: #f8f8f8;
-    height: 233px;
+    height: 215px;
 }
 
 .flex-caption p a:after {
@@ -333,16 +346,28 @@ body #visual-portal-wrapper {
 
 /* --- Portlet généraux --- */
 
-dl.portlet dt, .portletWrapper dl.portlet dt a, dl.portlet a:link{
+dl.portlet dt, .portletWrapper dl.portlet a, .portletFooter,.portletFooter a{
     color: #475055;
 }
 
+.portletWrapper dl.portlet a:hover, .portletFooter,.portletFooter a:hover{
+    color: #3A3A3A !important;
+}
+
+#portlet-photo dd{
+	padding-top:0;
+}
 /* --- Fin portlet généraux --- */
 
 /* --- Couleur deux premiers portlets --- */
 
+#portal-column-one aside > div:first-child dl.portlet,
 #portal-column-two aside > div:first-child dl.portlet {
-    margin-top: 25px;
+    margin-top: 1.8em;
+}
+
+#portal-column-one aside > div:first-child dl.portlet .portletHeader {
+	padding-top: 1em;
 }
 
 #portal-column-two aside > div:first-child dl.portlet .portletHeader,
@@ -388,7 +413,8 @@ dl.portlet dt, .portletWrapper dl.portlet dt a, dl.portlet a:link{
 #portal-column-two aside > div:nth-child(2),
 #portal-column-two aside > div:nth-child(2) dl.portlet dt{
     background-color: #ea6060;
-    color: white;  
+    color: white;
+    margin-bottom:1em;  
 }
 
 #portal-column-two aside > div:nth-child(2) dl.portlet .portletHeader a{
@@ -409,6 +435,7 @@ dl.portlet dt, .portletWrapper dl.portlet dt a, dl.portlet a:link{
 #portal-column-two aside > div:nth-child(2) .portletItem{
 	padding-left:1.2em;
 }
+
 .portletStaticText.portlet-static-liens-directs{
 	padding:0;
 }
@@ -461,6 +488,19 @@ dl.portlet dt, .portletWrapper dl.portlet dt a, dl.portlet a:link{
 }
 
 /* --- Fin portlet boîtes à outils--- */
+
+/* --- Portlet navigation --- */
+
+dl.portlet ul.navTree .navTreeCurrentItem,dl.portlet ul.navTree li a:hover{
+    background-color: #d3d3d3;
+    color: #444 !important;
+}
+
+#portal-column-one .portletNavigationTree dd ul li a {
+    padding: 0.5em 0 0.5em 0.5em !important;
+}
+
+/* --- Fin portlet navigation --- */
 
 /* >>> FIN CONTENT <<< */
 
@@ -516,8 +556,9 @@ dl.portlet dt, .portletWrapper dl.portlet dt a, dl.portlet a:link{
     color:#ffffff;
     float: right;
     margin-left:0;
+    margin-right:1em;
     padding: 1em;
-    width: 16.75%
+    width: 15.6%;
 }
 
 #footer-sitemap div.footer-static h2 {
