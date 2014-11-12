@@ -22,6 +22,10 @@ body #visual-portal-wrapper {
     z-index: 1;
 }
 
+#portal-siteactions{
+	clear:none;
+}
+
 #portal-header #top-actions {
     padding-top: 0.3em;
 }
@@ -177,7 +181,7 @@ body #visual-portal-wrapper {
 /* --- Réseaux sociaux --- */
 
 #social-viewlet, #portal-personaltools-wrapper, #portal-siteactions {
-    float: right;
+    float: left;
 }
 
 #content #viewlet-above-content-title ul li a:before {
