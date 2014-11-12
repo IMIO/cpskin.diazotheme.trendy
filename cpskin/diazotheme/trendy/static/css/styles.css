@@ -62,7 +62,8 @@ body #visual-portal-wrapper {
 #portal-top #cpskin-banner {
     background-color: #ffffff;
     margin: auto auto 0;
-    padding: 0 0.8%;
+    max-width: 1190px;
+    padding: 0 0.5%;
 }
 
 
@@ -239,10 +240,6 @@ body #visual-portal-wrapper {
     color: #475055;
 }
 
-/*.bloc-2 .titre-rss {
-    margin-top: -5px;
-}
-*/
 .results{
     background-color: white;
     border-top: 1px solid #dde2e4;
@@ -260,6 +257,27 @@ body #visual-portal-wrapper {
 #content #accueil a.voir-tout:hover {
     color:#747f84 !important;
 }
+
+/* --- Page d'accueil section-notheme --- */
+
+.section-notheme #flex {
+    max-width: 62%;
+    margin: -292px 0 87px; /*positionnement flexslider */
+}
+
+.section-notheme #portal-columns,.section-notheme #portal-footer-wrapper {
+    top: 320px;
+}
+
+.section-notheme .documentEditable {
+	margin-top:-320px;
+}
+
+.section-notheme #content {
+    margin: 0.5em 0.25em 2em -0.1em;
+}
+
+/* --- Fin page d'accueil section-notheme --- */
 
 /* --- Viewlet multimédia --- */
 
@@ -291,8 +309,7 @@ body #visual-portal-wrapper {
 
 #flex {
     background-color: #56c2cc;
-    margin: 4.5em 0 4em;
-    max-width: 50%;
+    max-width: 100%;
     opacity:0.95;
 }
 
@@ -301,14 +318,18 @@ body #visual-portal-wrapper {
     margin-bottom: 0;
 }
 
+#content #flex .flexslider a, #content #flex .flexslider #content #flex a:hover, #content #flex .flexslider a:link {
+    color: #444 !important;
+}
+
 .flex-viewport {
     background-color: #ffffff;
     margin: 0 auto;
-    max-width: 81%;
+    max-width: 80%;
 }
 
 .flex-direction-nav a {
-    margin: -27px 12px 0;
+    margin: -25px 18px 0;
     opacity: 1;
 }
 
@@ -317,7 +338,7 @@ body #visual-portal-wrapper {
 }
 
 .flex-direction-nav .flex-prev, .flexslider:hover .flex-prev {
-    left: 0;
+    left: 0 ;
 }
 
 .flex-direction-nav .flex-next, .flexslider:hover .flex-next {
@@ -326,7 +347,7 @@ body #visual-portal-wrapper {
 
 #slider.flexslider .flex-caption {
     margin-top: 0;
-    width: 77.1%;
+    width: 76%;
     padding: 0.25em 2% 0.75em;
 }
 
