@@ -1,12 +1,11 @@
 Changelog
 =========
 
--Change header
 
 0.2 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- change header background.
 
 
 0.1 (2014-11-14)
