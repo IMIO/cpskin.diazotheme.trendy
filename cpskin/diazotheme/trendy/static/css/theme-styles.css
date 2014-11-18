@@ -2,7 +2,7 @@
     background-image: url("../images/header.jpg");
     background-repeat: no-repeat;
     background-position: center top;
-    background-size: auto 490px;
+    height: 490px;
 }
 
 .section-theme1 #visual-portal-wrapper {
