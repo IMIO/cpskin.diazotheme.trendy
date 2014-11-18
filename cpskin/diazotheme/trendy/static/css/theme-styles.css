@@ -1,12 +1,12 @@
 #visual-portal-wrapper {
-    background-image: url("/images/header.jpg");
+    background-image: url("../images/header.jpg");
     background-repeat: no-repeat;
     background-position: center top;
     background-size: auto 490px;
 }
 
 .section-theme1 #visual-portal-wrapper {
-    background-image: url("/images/header-t1.jpg");
+    background-image: url("../images/header.jpg");
 }
 
 .section-theme2 #visual-portal-wrapper {
@@ -259,8 +259,8 @@ margin: 0;
 #portal-columns {
     background-color: white;
     height: 667px;
-    max-width: 1200px;
-    padding: 0 0.8% 1%;
+    max-width: 1184px;
+    padding: 0 10px 1%;
 }
 
 #portal-column-content #portal-breadcrumbs {
@@ -334,7 +334,7 @@ margin: 0;
     margin-bottom: -210px;
     position: relative;
     top: -290px;
-    left: -7px;
+    left: -15px;
 }
 
 #flex {
@@ -419,13 +419,8 @@ dl.portlet dt, .portletWrapper dl.portlet a, .portletFooter,.portletFooter a{
 
 /* --- Couleur deux premiers portlets --- */
 
-#portal-column-one aside > div:first-child dl.portlet,
-#portal-column-two aside > div:first-child dl.portlet {
-    margin-top: 1.8em;
-}
-
-#portal-column-one aside > div:first-child dl.portlet .portletHeader {
-	padding-top: 1em;
+#portal-column-two, #portal-column-one{
+padding-top:1em;
 }
 
 #portal-column-two aside > div:first-child dl.portlet .portletHeader,
