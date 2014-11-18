@@ -1,6 +1,7 @@
 Changelog
 =========
 
+-Change header
 
 0.2 (unreleased)
 ----------------
