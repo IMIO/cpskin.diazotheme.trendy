@@ -1,12 +1,12 @@
 #visual-portal-wrapper {
-    background-image: url("../images/header.jpg");
+    background-image: url("/images/header.jpg");
     background-repeat: no-repeat;
     background-position: center top;
     background-size: auto 490px;
 }
 
 .section-theme1 #visual-portal-wrapper {
-    background-image: url("../images/header.jpg");
+    background-image: url("/images/header-t1.jpg");
 }
 
 .section-theme2 #visual-portal-wrapper {
