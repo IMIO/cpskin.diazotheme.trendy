@@ -1,8 +1,20 @@
-body #visual-portal-wrapper {
-    background-image: url("../images/header-bg.jpg");
+#visual-portal-wrapper {
+    background-image: url("../images/header.jpg");
     background-repeat: no-repeat;
     background-position: center top;
-    background-size: 100% 530px;
+    background-size: auto 490px;
+}
+
+.section-theme1 #visual-portal-wrapper {
+    background-image: url("../images/header.jpg");
+}
+
+.section-theme2 #visual-portal-wrapper {
+    background-image: url("/images/header-t2.jpg");
+}
+
+.section-theme3 #visual-portal-wrapper {
+    background-image: url("/images/header-t3.jpg");
 }
 
 /* >>> HEADER <<< */
@@ -17,9 +29,22 @@ body #visual-portal-wrapper {
 }
 
 #top-actions {
-    margin-bottom: -1.5em;
+   /* margin-bottom: -1.5em;*/
     position: relative;
     z-index: 1;
+}
+
+#top-actions-inner, #top-search-logo-inner {
+    max-width: 100%;
+    margin:0 1%;
+}
+
+#portal-personaltools dt {
+    margin-right: 0;
+}
+
+#portal-personaltools #anon-personalbar a {
+margin: 0;
 }
 
 #portal-siteactions{
@@ -27,7 +52,8 @@ body #visual-portal-wrapper {
 }
 
 #portal-header #top-actions {
-    padding-top: 0.3em;
+    padding-top: 0em;
+    z-index:2;
 }
 
 #portal-header #top-actions a{
@@ -38,12 +64,17 @@ body #visual-portal-wrapper {
     color: #4A5354;
 }
 
-#top-search-logo, .section-notheme #top-actions, #portal-header #navWrapper {
+/*#top-search-logo, .section-notheme #top-actions, #portal-header #navWrapper {
     background-color: transparent;
     margin: 0 auto;
     max-width: 1200px;
     padding:0 1%;
-}
+}*/
+
+#top-search-logo, .section-notheme #top-actions, #portal-header #navWrapper {
+    background-color: transparent;
+    margin: 0 auto;
+    }
 
 .LSBox:after {
     color: #ffffff;
@@ -53,10 +84,11 @@ body #visual-portal-wrapper {
     background-color: #56c2cc;
     margin:0.2em 0 1.2em;
     right: 0;
+    top:0.5em;
 }
 
 #portal-logo{
-	margin: 1em 0 0.8em;
+    margin: -10px 0 10px;
 }
 
 #portal-top #cpskin-banner {
@@ -159,8 +191,8 @@ body #visual-portal-wrapper {
 .section-notheme #portal-header ul.navTreeLevel0 {
     box-shadow: 0 4px 4px #6b6b6b;
     position: absolute;
-    width: 100%;
-    z-index: 1;
+    width: 98%;
+    max-width:1230px;
 }
 
 .section-notheme #portal-header .sf-menu ul.navTreeLevel1{
@@ -208,6 +240,9 @@ body #visual-portal-wrapper {
 
 #portal-personaltools dd {
     background-color: #fff;
+    margin-rigth:0;
+    border-top-left-radius:5px;
+    margin-right:0;
 }
 
 /* --- Fin pannaux admin --- */
@@ -215,6 +250,7 @@ body #visual-portal-wrapper {
 /* >>> FIN HEADER <<< */
 
 /* >>> CONTENT <<< */
+
 
 #content a:hover {
     color: #3a3a3a !important;
@@ -258,27 +294,6 @@ body #visual-portal-wrapper {
     color:#747f84 !important;
 }
 
-/* --- Page d'accueil section-notheme --- */
-
-.section-notheme #flex {
-    max-width: 62%;
-    margin: -292px 0 87px; /*positionnement flexslider */
-}
-
-.section-notheme #portal-columns,.section-notheme #portal-footer-wrapper {
-    top: 320px;
-}
-
-.section-notheme .documentEditable {
-	margin-top:-320px;
-}
-
-.section-notheme #content {
-    margin: 0.5em 0.25em 2em -0.1em;
-}
-
-/* --- Fin page d'accueil section-notheme --- */
-
 /* --- Viewlet multimédia --- */
 
 #multimediaviewlet {
@@ -307,10 +322,28 @@ body #visual-portal-wrapper {
 
 /* --- Flexslider --- */
 
+.section-notheme #portal-top {
+    margin-bottom: 316px;
+}
+
+.section-notheme .flex-container{
+    max-width: 593px;
+}
+
+.section-notheme #flex {
+    margin-bottom: -210px;
+    position: relative;
+    top: -290px;
+    left: -7px;
+}
+
 #flex {
-    background-color: #56c2cc;
     max-width: 100%;
-    opacity:0.95;
+    opacity: 0.95;
+}
+
+.flex-container {
+    background-color: #56c2cc;
 }
 
 .flexslider {
@@ -533,6 +566,7 @@ dl.portlet ul.navTree .navTreeCurrentItem,dl.portlet ul.navTree li a:hover{
 
 #footer-sitemap {
     max-width: 1230px;
+    margin:2em auto;
 }
 
 #portal-footer-wrapper {
@@ -562,7 +596,6 @@ dl.portlet ul.navTree .navTreeCurrentItem,dl.portlet ul.navTree li a:hover{
 
 .footer-sitemap-item a{
     color: #434853;
-    font-weight: bold;
     margin-left:0;
 }
 
@@ -575,15 +608,22 @@ dl.portlet ul.navTree .navTreeCurrentItem,dl.portlet ul.navTree li a:hover{
     display:none;
 }
 
+#footer-static-social {
+    float: left;
+}
+
 #footer-sitemap div.footer-static {
     background-color: #A4AFB5;
     border-left:none;
     color:#ffffff;
-    float: right;
+    float: left;
     margin-left:0;
-    margin-right:1em;
+    margin-right:0.25em;
     padding: 1em;
-    width: 15.6%;
+}
+
+#footer-static-social .social {
+    display: block;
 }
 
 #footer-sitemap div.footer-static h2 {
