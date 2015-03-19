@@ -5,7 +5,8 @@ Changelog
 0.3 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Fix randomly broken html (no head, ...)
+  See details in http://trac.imio.be/trac/ticket/10615
 
 
 0.2 (2014-11-18)
