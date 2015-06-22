@@ -155,6 +155,13 @@ margin: 0;
     background: none repeat scroll 0 0 #56c2cc;
     color:#ffffff;
 }
+#portal-globalnav #portaltab-index_html a::before{
+	color:#000000;
+}
+
+#portal-globalnav #portaltab-index_html.selected a::before, #portal-globalnav #portaltab-index_html.plain a:hover::before{
+	color:#ffffff;
+}
 
 .selected .icone-home:before{
     color:grey;
@@ -199,7 +206,25 @@ margin: 0;
 	box-shadow: 0 2px 2px #6b6b6b;
 }
 
+.portal-globalnav-cpskinmenu {
+    border-top: 6px solid #56c2cc;
+}
+
 /* --- Fin navigation --- */
+
+/* --- Je suis,accès directs --- */
+#navWrapper #portal-globalnav #portaltab-je-suis a, #navWrapper #portal-globalnav #portaltab-je-trouve a,
+ #navWrapper #portal-globalnav #portaltab-je-suis .selected a, #navWrapper #portal-globalnav #portaltab-je-trouve .selected a {
+    background-color: transparent;
+}
+
+#navWrapper #portal-globalnav #portaltab-je-suis a:hover, #navWrapper #portal-globalnav #portaltab-je-trouve a:hover,
+#navWrapper #portal-globalnav #portaltab-je-suis .activated, #navWrapper #portal-globalnav #portaltab-je-trouve .activated{
+    background-color: #56C2CC;
+    color:#ffffff;
+}
+
+/* --- Fin Je suis,accès directs --- */
 
 /* --- Faceted navigation --- */
 
