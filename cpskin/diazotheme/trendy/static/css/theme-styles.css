@@ -402,6 +402,10 @@ margin: 0;
     right: 0;
 }
 
+/*
+Those rules (#slider & #carousel) should change when #16991 is in production
+Begin
+*/
 #slider.flexslider .flex-caption {
     margin-top: 0;
     width: 76%;
@@ -412,6 +416,18 @@ margin: 0;
     background-color: #f8f8f8;
     height: 215px;
 }
+
+#slider-a-la-une.flexslider .flex-caption {
+    margin-top: 0;
+    width: 76%;
+    padding: 0.25em 2% 0.75em;
+}
+
+#slider-a-la-une.flexslider .flex-caption {
+    background-color: #f8f8f8;
+    height: 215px;
+}
+/* End */
 
 .flex-caption p a:after {
     background-color: red;

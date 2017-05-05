@@ -3,7 +3,11 @@
        xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
        xmlns:css="http://namespaces.plone.org/diazo/css">
 
+  <!-- Those rules (#slider & #carousel) should change when #16991 is in production -->
+
   <drop css:content="#carousel" />
+  <drop css:content="#carousel-a-la-une" />
   <drop css:content="#slider .slides .linkimg" />
+  <drop css:content="#slider-a-la-une .slides .linkimg" />
 
 </rules>
