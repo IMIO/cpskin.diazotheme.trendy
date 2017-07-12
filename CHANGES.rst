@@ -5,7 +5,8 @@ Changelog
 0.3.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add uninstall profile.
+  [bsuttor]
 
 
 0.3 (2017-05-29)
