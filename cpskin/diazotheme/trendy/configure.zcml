@@ -18,6 +18,15 @@
         provides="Products.GenericSetup.interfaces.EXTENSION"
         />
 
+    <genericsetup:registerProfile
+        name="uninstall"
+        title="cpskin.diazotheme.trendy uninstall"
+        directory="profiles/uninstall"
+        description="Installs cpskin.diazotheme.trendy theme"
+        for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+
     <!-- Theme -->
     <plone:static directory="static" name="cpskin.diazotheme.trendy" type="theme" />
 
