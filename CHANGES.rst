@@ -5,6 +5,9 @@ Changelog
 0.3.1 (unreleased)
 ------------------
 
+- Remove unused skin.
+  [bsuttor]
+
 - Add uninstall profile.
   [bsuttor]
 
