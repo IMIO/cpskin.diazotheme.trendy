@@ -2,10 +2,11 @@ Changelog
 =========
 
 
-0.3.2 (unreleased)
+0.3.2 (2017-07-25)
 ------------------
 
-- Nothing changed yet.
+- Change css to navigation for LESS
+  [mgennart]
 
 
 0.3.1 (2017-07-17)
