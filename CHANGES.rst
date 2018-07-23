@@ -2,11 +2,11 @@ Changelog
 =========
 
 
-0.3.4 (unreleased)
+0.3.4 (2018-07-23)
 ------------------
 
-- Nothing changed yet.
-
+- Correction css for slider.
+  [mgennart]
 
 0.3.3 (2017-10-12)
 ------------------
