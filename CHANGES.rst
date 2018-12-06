@@ -5,6 +5,10 @@ Changelog
 0.3.5 (unreleased)
 ------------------
 
+- Migrate carousel sliders to count sliders
+  This allows us to remove images from html whitout using Diazo rules
+  [laulaz]
+
 - Fix incomplete uninstall profile
   [laulaz]
 

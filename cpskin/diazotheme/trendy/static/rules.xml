@@ -4,7 +4,6 @@
   <xi:include href="/++theme++cpskin.theme.base/rules.xml"/>
 
   <!-- Our own rules -->
-  <xi:include href="rules/banner.xml"/>
   <xi:include href="rules/footer.xml"/>
 
 </rules>

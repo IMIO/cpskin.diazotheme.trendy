@@ -40,4 +40,13 @@
         profile="cpskin.diazotheme.trendy:default"
         />
 
+    <genericsetup:upgradeStep
+        title="cpskin.diazotheme.trendy theme: migrate carousel sliders to count sliders (v0003)"
+        description=""
+        handler=".upgradehandlers.migrate_carousel_sliders_to_count"
+        source="0002"
+        destination="0003"
+        profile="cpskin.diazotheme.trendy:default"
+        />
+
 </configure>
