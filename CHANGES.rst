@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-0.3.5 (unreleased)
+0.3.5 (2019-01-08)
 ------------------
 
 - Migrate carousel sliders to count sliders
